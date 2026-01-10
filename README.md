@@ -1,8 +1,10 @@
 ## 🚀Introduction
 
-I developed a fashion recommendation system that utilizes the power of transfer learning using ResNet-50 architecture along with Annoy an optimized K-Nearest Neighbours algorithm to deliver personalized recommendations based on user input. By performing feature extraction on a large dataset of over 45,000 images using transfer learning with ResNet-50, I was able to effectively analyze the image data. To identify the top 5 closest matches to a user's input, I implemented a similarity search approach using K-Nearest Neighbours, providing personalized fashion recommendations. The system is user-friendly and intuitive, and allows for accurate and effective analysis of image data.
+A fashion recommendation system that utilizes the power of transfer learning using ResNet-50 architecture along with Annoy an optimized K-Nearest Neighbours algorithm to deliver personalized recommendations based on user input. By performing feature extraction on a large dataset of over 45,000 images using transfer learning with ResNet-50, I was able to effectively analyze the image data. To identify the top 5 closest matches to a user's input, I implemented a similarity search approach using K-Nearest Neighbours, providing personalized fashion recommendations. The system is user-friendly and intuitive, and allows for accurate and effective analysis of image data.
 
 This  recommendation system showcases the versatility and power of  transfer learning, similarity search, and convolutional neural networks (CNNs), providing a solid foundation for building larger and more comprehensive recommendation systems
+
+To try the deployed syste : https://fashion-recommendation-system-deploy-jwjk6gabttntghihaawspd.streamlit.app/
 
 ##   💻Recommendation Engine:Proposed Methodology 
 
@@ -105,56 +107,6 @@ To run the web server, simply execute streamlit with the main recommender app:
 streamlit run main.py
 ```
 
-## Deployment
-
-This project is prepared to deploy on Vercel using a Docker container. Recommended steps:
-
-1. Install the Vercel CLI: `npm i -g vercel`
-2. Login: `vercel login`
-3. From the project root run: `vercel --prod` and follow prompts.
-
-Local test (requires Docker):
-
-```powershell
-docker build -t fashion-app .
-docker run -p 8080:8080 -e PORT=8080 fashion-app
-# then open http://localhost:8080
-```
-
-Notes
------
-- `tensorflow-cpu` is large; Vercel build limits or timeouts may occur on the free tier.
-- If you hit size/time limits, consider precomputing embeddings locally and serving only the Streamlit UI, or use another host that supports larger images or GPU workloads.
-
-
-
-## [Built With/Dependencies](dependencies)
-
-- **OpenCV** - Open Source Computer Vision and Machine Learning software library
- 
-- **Tensorflow** - TensorFlow is an end-to-end open source platform for machine learning.
-
-- **Tqdm** - tqdm is a Python library that allows you to output a smart progress bar by wrapping around any iterable.
-
-- **streamlit** - Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful data apps in hours, not weeks.
-
-- **pandas** - pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
-
-- **Pillow** - PIL is the Python Imaging Library by Fredrik Lundh and Contributors.
-
-- **scikit-learn** - Scikit-learn is a free software machine learning library for the Python programming language.
-
-- **opencv-python** - OpenCV is a huge open-source library for computer vision, machine learning, and image processing.
-
-
-
-## 💡Challenges Faced and Learnings
-
-- Had very basic knowledge of Deep Learning before the Microsoft Engage Program's qualification announcement. Spentquality time on learning the new concepts attached to Deep Learning and then began the design-build process of this project.
-
-- Had to learn streamlit for creating graphical UI.
-
-- Setting the dependencies with proper version is the most critical. 
 
 
 ## 📚Resources
