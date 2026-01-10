@@ -4,7 +4,7 @@ A fashion recommendation system that utilizes the power of transfer learning usi
 
 This  recommendation system showcases the versatility and power of  transfer learning, similarity search, and convolutional neural networks (CNNs), providing a solid foundation for building larger and more comprehensive recommendation systems
 
-🔗 **Live Demo:** [Explore the deployed Streamlit app](https://fashion-recommendation-system-deploy-jwjk6gabttntghihaawspd.streamlit.app/
+🔗 **Live Demo:** [Explore the deployed Streamlit app](https://fashion-recommendation-system-deploy-jwjk6gabttntghihaawspd.streamlit.app/)
 
 
 ##   💻Recommendation Engine:Proposed Methodology 
